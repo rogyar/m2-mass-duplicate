@@ -9,7 +9,7 @@ use Magento\Catalog\Model\Product\Copier;
 use Magento\Catalog\Model\ResourceModel\Product\CollectionFactory;
 use Psr\Log\LoggerInterface;
 
-class Duplicate extends BackendAction
+class MassDuplicate extends BackendAction
 {
     /**
      * Massactions filter
@@ -43,7 +43,7 @@ class Duplicate extends BackendAction
         CollectionFactory $collectionFactory,
         LoggerInterface $logger
     ) {
-
+        die('hello');
         $this->$collectionFactory = $collectionFactory;
         $this->filter = $filter;
         $this->productsCopier = $copier;

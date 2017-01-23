@@ -3,7 +3,7 @@
         xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
     <router id="admin">
         <route id="atwix_mass_duplicate" frontName="atwix_mass_duplicate">
-            <module name="Atwix_MassDuplicate"/>
+            <module name="Atwix_MassDuplicate" before="Magento_Backend"/>
         </route>
     </router>
 </config>
